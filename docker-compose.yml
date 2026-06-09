@@ -153,6 +153,8 @@ services:
         condition: service_healthy
       redis:
         condition: service_started
+      xpay-tron:
+        condition: service_started
       xpay-eth:
         condition: service_started
     networks:
