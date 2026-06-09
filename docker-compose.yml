@@ -63,6 +63,16 @@ services:
     command: java -jar XPayLabs-tron.jar
     environment:
       <<: *common-env
+      # Active TRON chains (delete any to disable)
+      TRON_NETWORKS: TRON,TRON_TEST
+      TRON_CHAINS_TRON_FULLNODE: ${TRON_CHAINS_TRON_FULLNODE}
+      TRON_CHAINS_TRON_SOLIDITYNODE: ${TRON_CHAINS_TRON_SOLIDITYNODE}
+      TRON_CHAINS_TRON_HEXPRIVATEKEY: ${TRON_CHAINS_TRON_HEXPRIVATEKEY}
+      TRON_CHAINS_TRON_APIKEY: ${TRON_CHAINS_TRON_APIKEY}
+      TRON_CHAINS_TRON_TEST_FULLNODE: ${TRON_CHAINS_TRON_TEST_FULLNODE}
+      TRON_CHAINS_TRON_TEST_SOLIDITYNODE: ${TRON_CHAINS_TRON_TEST_SOLIDITYNODE}
+      TRON_CHAINS_TRON_TEST_HEXPRIVATEKEY: ${TRON_CHAINS_TRON_TEST_HEXPRIVATEKEY}
+      TRON_CHAINS_TRON_TEST_APIKEY: ${TRON_CHAINS_TRON_TEST_APIKEY}
     volumes:
       - ./logs:/app/logs
     ports:
@@ -95,8 +105,6 @@ services:
         condition: service_started
       sui-node-service:
         condition: service_started
-      xpay-tron:
-        condition: service_started
     networks:
       - xpay-network
 
@@ -107,6 +115,16 @@ services:
     command: java -jar XPayLabs-eth.jar
     environment:
       <<: *common-env
+      # Active EVM chains (delete any to disable)
+      ETH_NETWORKS: ETH,ETH_SEPOLIA,BSC,BSC_TEST,POLYGON,POLYGON_AMOY,AVAX_C_CHAIN,AVAX_FUJI_TEST
+      ETH_CHAINS_ETH_RPCURLS: ${ETH_CHAINS_ETH_RPCURLS}
+      ETH_CHAINS_ETH_SEPOLIA_RPCURLS: ${ETH_CHAINS_ETH_SEPOLIA_RPCURLS}
+      ETH_CHAINS_BSC_RPCURLS: ${ETH_CHAINS_BSC_RPCURLS}
+      ETH_CHAINS_BSC_TEST_RPCURLS: ${ETH_CHAINS_BSC_TEST_RPCURLS}
+      ETH_CHAINS_POLYGON_RPCURLS: ${ETH_CHAINS_POLYGON_RPCURLS}
+      ETH_CHAINS_POLYGON_AMOY_RPCURLS: ${ETH_CHAINS_POLYGON_AMOY_RPCURLS}
+      ETH_CHAINS_AVAX_C_CHAIN_RPCURLS: ${ETH_CHAINS_AVAX_C_CHAIN_RPCURLS}
+      ETH_CHAINS_AVAX_FUJI_TEST_RPCURLS: ${ETH_CHAINS_AVAX_FUJI_TEST_RPCURLS}
     volumes:
       - ./logs:/app/logs
     ports:
@@ -115,8 +133,6 @@ services:
       mysql:
         condition: service_healthy
       redis:
-        condition: service_started
-      xpay-sui:
         condition: service_started
     networks:
       - xpay-network
