@@ -198,6 +198,8 @@ services:
     image: xpaylabs/checkout
     pull_policy: never
     container_name: xpay-checkout
+    volumes:
+      - ./nginx/checkout.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - xpay-user
     networks:
