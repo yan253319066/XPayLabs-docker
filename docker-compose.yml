@@ -116,7 +116,8 @@ services:
     environment:
       <<: *common-env
       # Active EVM chains (delete any to disable)
-      ETH_NETWORKS: ETH,ETH_SEPOLIA,BSC,BSC_TEST,POLYGON,POLYGON_AMOY,AVAX_C_CHAIN,AVAX_FUJI_TEST
+      ETH_NETWORKS: ETH,ETH_SEPOLIA
+      # ,BSC,BSC_TEST,POLYGON,POLYGON_AMOY,AVAX_C_CHAIN,AVAX_FUJI_TEST
       ETH_CHAINS_ETH_RPCURLS: ${ETH_CHAINS_ETH_RPCURLS}
       "ETH_CHAINS_[ETH_SEPOLIA]_RPCURLS": ${ETH_CHAINS_ETH_SEPOLIA_RPCURLS}
       ETH_CHAINS_BSC_RPCURLS: ${ETH_CHAINS_BSC_RPCURLS}
@@ -186,6 +187,8 @@ services:
     image: xpaylabs/merchant-vue
     pull_policy: never
     container_name: xpay-merchant-vue
+    volumes:
+      - ./nginx/merchant-vue.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - xpay-merchant
     networks:
