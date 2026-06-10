@@ -41,7 +41,7 @@ services:
       - xpay-network
 
   sui-node-service:
-    image: xpaylabs/sui-node-service
+    image: ghcr.io/yan253319066/sui-node-service
     pull_policy: never
     container_name: xpay-sui-node
     environment:
@@ -57,7 +57,7 @@ services:
       - xpay-network
 
   xpay-tron:
-    image: xpaylabs/xpay-java
+    image: ghcr.io/yan253319066/xpay-java
     pull_policy: never
     container_name: xpay-tron
     command: java -jar XPayLabs-tron.jar
@@ -88,7 +88,7 @@ services:
       - xpay-network
 
   xpay-sui:
-    image: xpaylabs/xpay-java
+    image: ghcr.io/yan253319066/xpay-java
     pull_policy: never
     container_name: xpay-sui
     command: java -jar XPayLabs-sui.jar
@@ -111,7 +111,7 @@ services:
       - xpay-network
 
   xpay-eth:
-    image: xpaylabs/xpay-java
+    image: ghcr.io/yan253319066/xpay-java
     pull_policy: never
     container_name: xpay-eth
     command: java -jar XPayLabs-eth.jar
@@ -148,7 +148,7 @@ services:
       - xpay-network
 
   xpay-user:
-    image: xpaylabs/xpay-java
+    image: ghcr.io/yan253319066/xpay-java
     pull_policy: never
     container_name: xpay-user
     command: java -jar XPayLabs.jar
@@ -171,7 +171,7 @@ services:
       - xpay-network
 
   xpay-merchant:
-    image: xpaylabs/xpay-java
+    image: ghcr.io/yan253319066/xpay-java
     pull_policy: never
     container_name: xpay-merchant
     command: java -jar XPayLabs-merchant.jar
@@ -193,7 +193,7 @@ services:
       - xpay-network
 
   merchant-vue:
-    image: xpaylabs/merchant-vue
+    image: ghcr.io/yan253319066/merchant-vue
     pull_policy: never
     container_name: xpay-merchant-vue
     volumes:
@@ -204,7 +204,7 @@ services:
       - xpay-network
 
   checkout:
-    image: xpaylabs/checkout
+    image: ghcr.io/yan253319066/checkout
     pull_policy: never
     container_name: xpay-checkout
     volumes:
