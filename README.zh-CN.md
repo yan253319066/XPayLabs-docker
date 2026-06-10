@@ -70,14 +70,14 @@
 |------|------|------|
 | `mysql` | `mysql:8.0` | 主数据库 |
 | `redis` | `redis:7-alpine` | 缓存和会话存储 |
-| `sui-node-service` | `xpaylabs/sui-node-service` | SUI 区块链 RPC 代理（Express） |
-| `xpay-tron` | `xpaylabs/xpay-java` | TRON 链扫描器 |
-| `xpay-sui` | `xpaylabs/xpay-java` | SUI 链扫描器 |
-| `xpay-eth` | `xpaylabs/xpay-java` | EVM 兼容扫描器（ETH, BSC, Polygon, Avalanche） |
-| `xpay-user` | `xpaylabs/xpay-java` | 用户和收款订单 API 服务 |
-| `xpay-merchant` | `xpaylabs/xpay-java` | 商家后端（基于 RuoYi-Vue-Plus） |
-| `merchant-vue` | `xpaylabs/merchant-vue` | 商家管理后台（Vue 3 + Element Plus） |
-| `checkout` | `xpaylabs/checkout` | 支付收银台（Vue 3 + Vite 7） |
+| `sui-node-service` | `ghcr.io/yan253319066/sui-node-service` | SUI 区块链 RPC 代理（Express） |
+| `xpay-tron` | `ghcr.io/yan253319066/xpay-java` | TRON 链扫描器 |
+| `xpay-sui` | `ghcr.io/yan253319066/xpay-java` | SUI 链扫描器 |
+| `xpay-eth` | `ghcr.io/yan253319066/xpay-java` | EVM 兼容扫描器（ETH, BSC, Polygon, Avalanche） |
+| `xpay-user` | `ghcr.io/yan253319066/xpay-java` | 用户和收款订单 API 服务 |
+| `xpay-merchant` | `ghcr.io/yan253319066/xpay-java` | 商家后端（基于 RuoYi-Vue-Plus） |
+| `merchant-vue` | `ghcr.io/yan253319066/merchant-vue` | 商家管理后台（Vue 3 + Element Plus） |
+| `checkout` | `ghcr.io/yan253319066/checkout` | 支付收银台（Vue 3 + Vite 7） |
 | `gateway` | `nginx:alpine` | 统一入口（反向代理） |
 
 ---

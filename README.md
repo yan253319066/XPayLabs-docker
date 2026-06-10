@@ -71,14 +71,14 @@
 |---------|-------|------|
 | `mysql` | `mysql:8.0` | Primary database |
 | `redis` | `redis:7-alpine` | Cache & session store |
-| `sui-node-service` | `xpaylabs/sui-node-service` | SUI blockchain RPC proxy (Express) |
-| `xpay-tron` | `xpaylabs/xpay-java` | TRON blockchain scanner |
-| `xpay-sui` | `xpaylabs/xpay-java` | SUI blockchain scanner |
-| `xpay-eth` | `xpaylabs/xpay-java` | EVM-compatible scanner (ETH, BSC, Polygon, Avalanche) |
-| `xpay-user` | `xpaylabs/xpay-java` | User & collection order API service |
-| `xpay-merchant` | `xpaylabs/xpay-java` | Merchant backend (RuoYi-Vue-Plus based) |
-| `merchant-vue` | `xpaylabs/merchant-vue` | Merchant admin dashboard (Vue 3 + Element Plus) |
-| `checkout` | `xpaylabs/checkout` | Payment checkout page (Vue 3 + Vite 7) |
+| `sui-node-service` | `ghcr.io/yan253319066/sui-node-service` | SUI blockchain RPC proxy (Express) |
+| `xpay-tron` | `ghcr.io/yan253319066/xpay-java` | TRON blockchain scanner |
+| `xpay-sui` | `ghcr.io/yan253319066/xpay-java` | SUI blockchain scanner |
+| `xpay-eth` | `ghcr.io/yan253319066/xpay-java` | EVM-compatible scanner (ETH, BSC, Polygon, Avalanche) |
+| `xpay-user` | `ghcr.io/yan253319066/xpay-java` | User & collection order API service |
+| `xpay-merchant` | `ghcr.io/yan253319066/xpay-java` | Merchant backend (RuoYi-Vue-Plus based) |
+| `merchant-vue` | `ghcr.io/yan253319066/merchant-vue` | Merchant admin dashboard (Vue 3 + Element Plus) |
+| `checkout` | `ghcr.io/yan253319066/checkout` | Payment checkout page (Vue 3 + Vite 7) |
 | `gateway` | `nginx:alpine` | Single entry point (reverse proxy) |
 
 ---
