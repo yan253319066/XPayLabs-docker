@@ -1,9 +1,17 @@
-# XPayLabs Docker — Self-Hosted Crypto Payment Gateway
+# XPayLabs Docker — Self-Hosted Multi-Tenant Crypto Payment Gateway
+
+<p align="center">
+  <a href="README.zh-CN.md">中文</a> · <strong>English</strong>
+</p>
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Docker](https://img.shields.io/badge/docker-compose-2496ED?logo=docker)](docker-compose.yml)
 
-**XPayLabs** is a production-ready, open-source cryptocurrency payment gateway designed for merchants who want full control over their payment infrastructure. Deploy your own multi-chain crypto payment system with a single `docker compose up` command.
+<p align="center">
+  <em>Deploy your own multi-chain crypto payment gateway. Host unlimited merchants on a single instance, collect transaction fees, and keep 100% of the revenue.</em>
+</p>
+
+**XPayLabs** is a production-ready, open-source cryptocurrency payment gateway designed for operators who want full control over their payment infrastructure. Deploy a multi-chain, multi-tenant crypto payment system with a single `docker compose up` command — then onboard merchants and earn from every transaction processed.
 
 ---
 
@@ -11,6 +19,7 @@
 
 - **Multi-Chain Support** — Accept payments on Ethereum (ETH), TRON (TRX & USDT), BNB Smart Chain (BSC), Polygon (MATIC), Avalanche (AVAX), and SUI
 - **Self-Hosted** — Full ownership of data, funds, and infrastructure. No third-party dependency
+- **Multi-Tenant** — Host unlimited merchants on a single deployment. Set your own fee structure and earn from every transaction
 - **Merchant Dashboard** — Vue 3 + Element Plus admin panel for order management, payout, and settlement
 - **Embedded Checkout** — Drop-in payment page with QR code, wallet connect (Reown AppKit), and direct crypto transfer
 - **Collection Orders** — Generate unique deposit addresses per order; automatic blockchain scanning confirms payments
@@ -224,10 +233,42 @@ All Java services output logs to `./logs/` (mounted at `/app/logs`). Each servic
 
 ---
 
-## Why Self-Host Your Crypto Payment Gateway?
+## FAQ
 
-- **Zero fees** — No 1–2% processor cut. You keep 100% of every transaction
-- **Full privacy** — No KYC requirement. No third-party access to your customer data
-- **Instant settlement** — Funds arrive directly in your wallet. No waiting for processor payouts
-- **No counterparty risk** — You control the private keys. No exchange or payment processor can freeze your funds
-- **Customizable** — Modify the checkout UI, add new chains, or integrate with your existing ERP/CRM
+### What is XPayLabs Docker?
+
+XPayLabs Docker is a production-ready, self-hosted cryptocurrency payment gateway that supports multiple blockchains and multiple merchants on a single deployment. Run it with `docker compose up` and you have a complete payment infrastructure.
+
+### Can I host multiple merchants?
+
+Yes. XPayLabs is **multi-tenant by design**. A single deployment can serve unlimited merchants, each with isolated data, separate API credentials, and independent configuration.
+
+### Can I charge fees to merchants?
+
+Absolutely. As the platform operator, you set your own fee structure — percentage-based or flat fee per transaction. Since you run the infrastructure yourself, there are no third-party fees eating into your margin.
+
+### What blockchains are supported?
+
+Ethereum, TRON (TRX & USDT), BNB Smart Chain, Polygon, Avalanche, and SUI — with more being added.
+
+### Do I need KYC?
+
+No. Self-hosted means no KYC, no third-party approval, no onboarding delays. You are in complete control.
+
+---
+
+## Self-Hosted vs. Payment Processor
+
+| | XPayLabs (Self-Hosted) | Third-Party Processor |
+|---|---|---|
+| **Fee Control** | You set the rates. Zero processor cut | 1–3% per transaction + monthly fees |
+| **Multi-Tenant** | Host unlimited merchants | Usually single-merchant or upcharge per seat |
+| **Data Ownership** | Full. All data stays on your servers | Shared with processor and their sub-processors |
+| **Fund Settlement** | Direct to your wallet. Instant settlement | Processor holds and batches payouts |
+| **KYC** | None required | KYC for you and your merchants |
+| **Customization** | Full control over UI, chains, integrations | Limited to processor's SDK and templates |
+| **Counterparty Risk** | You control the private keys | Processor can freeze or delay funds |
+
+---
+
+*Last updated: June 2026. Maintained by [XPayLabs](https://github.com/yan253319066).*
