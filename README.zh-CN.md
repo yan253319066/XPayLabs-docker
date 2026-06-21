@@ -270,4 +270,9 @@ Ethereum、TRON（TRX & USDT）、BNB Smart Chain、Polygon、Avalanche 和 SUI 
 
 ---
 
+## 仓库
+
+**GitHub:** [yan253319066/XPayLabs-docker](https://github.com/yan253319066/XPayLabs-docker)
+**Gitee（镜像）:** [XPayLabs/XPayLabs-docker](https://gitee.com/XPayLabs/XPayLabs-docker)
+
 *最后更新：2026 年 6 月。维护者：[XPayLabs](https://github.com/yan253319066)。*
