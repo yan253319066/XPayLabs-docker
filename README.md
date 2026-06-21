@@ -272,3 +272,8 @@ No. Self-hosted means no KYC, no third-party approval, no onboarding delays. You
 ---
 
 *Last updated: June 2026. Maintained by [XPayLabs](https://github.com/yan253319066).*
+
+## Repository
+
+**GitHub:** [yan253319066/XPayLabs-docker](https://github.com/yan253319066/XPayLabs-docker)
+**Gitee (mirror):** [XPayLabs/XPayLabs-docker](https://gitee.com/XPayLabs/XPayLabs-docker)
