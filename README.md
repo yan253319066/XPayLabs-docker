@@ -11,7 +11,24 @@
   <em>Deploy your own multi-chain crypto payment gateway. Host unlimited merchants on a single instance, collect transaction fees, and keep 100% of the revenue.</em>
 </p>
 
+<p align="center">
+  <strong>⭐ If this project is useful, give it a star — it helps more people discover self-hosted crypto payments.</strong>
+</p>
+
 **XPayLabs** is a production-ready, open-source cryptocurrency payment gateway designed for operators who want full control over their payment infrastructure. Deploy a multi-chain, multi-tenant crypto payment system with a single `docker compose up` command — then onboard merchants and earn from every transaction processed.
+
+### 💰 Cost Comparison: Self-Hosted vs Hosted Gateways
+
+Processing **$100,000/month** in crypto payments:
+
+| Gateway | Transaction Fee | Monthly Fee | **Annual Cost** | Savings vs XPay |
+|---------|----------------|-------------|-----------------|-----------------|
+| **XPayLabs** | **0%** | $0 | **~$240** (VPS) | — |
+| NowPayments | 0.5% | $0 | ~$6,000 | **Save $5,760** |
+| Coinbase Commerce | 0.8% | $25 | ~$9,900 | **Save $9,660** |
+| BitPay | 1% | $30 | ~$12,360 | **Save $12,120** |
+
+> XPayLabs is free software. You pay only blockchain gas costs (~$0.02-$0.50/tx) and your VPS bill.
 
 ---
 
@@ -268,6 +285,10 @@ No. Self-hosted means no KYC, no third-party approval, no onboarding delays. You
 | **KYC** | None required | KYC for you and your merchants |
 | **Customization** | Full control over UI, chains, integrations | Limited to processor's SDK and templates |
 | **Counterparty Risk** | You control the private keys | Processor can freeze or delay funds |
+
+---
+
+🌟 **Enjoying XPayLabs?** [Star this repo](https://github.com/yan253319066/XPayLabs-docker) — it helps others discover self-hosted crypto payment infrastructure.
 
 ---
 
