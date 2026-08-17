@@ -1252,8 +1252,10 @@ CREATE TABLE `t_merchant` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2061724760923164677 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='商户信息表';
 
 /*Data for the table `t_merchant` */
-/* No seed rows — create merchants after first boot so tokens / webhook secrets / 2FA are not checked into git. */
 
+insert  into `t_merchant`(`id`,`sys_user_id`,`name`,`token`,`webhook_secret`,`white_list_ip`,`enable_whitelist_ip`,`generated_address_type`,`vip`,`fee_ratio`,`withdrawal_type`,`callback_url`,`into_type`,`account_type`,`merchant_sys_version`,`energy_apikey`,`google_secretkey`,`google_status`,`create_time`) values 
+(1,1,'admin','','','','ENABLED','ORDER',0,0.00,'MANUAL','','PLATFORM','MAIN','V3','','','UNBOUND','2026-06-09 15:41:17'),
+(2061724760923164675,2061724760923164673,'xpaytest','xpaytest','','','ENABLED','ORDER',1,0.00,'MANUAL','http://localhost:8077/webhook','PLATFORM','TEST','V3','','','UNBOUND','2026-06-02 16:21:02');
 
 /*Table structure for table `t_merchant_address` */
 
