@@ -213,9 +213,9 @@ docker compose up -d
 
 | 仓库 | 说明 |
 |------|------|
-| [XPayLabs-java](https://github.com/yan253319066/XPayLabs-java) | 网关核心（Spring Boot）— GPL-3.0 |
-| [XPayLabs-merchant-vue](https://github.com/yan253319066/XPayLabs-merchant-vue) | 商户后台（Vue 3 + Element Plus）— GPL-3.0 |
-| [XPayLabs-sui-node-service](https://github.com/yan253319066/XPayLabs-sui-node-service) | SUI 区块链 RPC 代理（Express）— MIT |
+| [XPayLabs-java](https://github.com/yan253319066/XPayLabs-java) | 网关核心（Spring Boot） |
+| [XPayLabs-merchant-vue](https://github.com/yan253319066/XPayLabs-merchant-vue) | 商户后台（Vue 3 + Element Plus） |
+| [XPayLabs-sui-node-service](https://github.com/yan253319066/XPayLabs-sui-node-service) | SUI 区块链 RPC 代理（Express） |
 | [XPayLabs](https://github.com/yan253319066/XPayLabs) | 营销官网（Next.js 15） |
 | [XPayLabs-docs](https://github.com/yan253319066/XPayLabs-docs) | 文档站（Mintlify） |
 | [XPayLabs-checkout](https://github.com/yan253319066/XPayLabs-checkout) | 收银台页面（Vue 3） |

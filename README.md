@@ -231,9 +231,9 @@ All Java services output logs to `./logs/` (mounted at `/app/logs`). Each servic
 
 | Repository | Description |
 |------------|-------------|
-| [XPayLabs-java](https://github.com/yan253319066/XPayLabs-java) | Gateway core (Spring Boot) — GPL-3.0 |
-| [XPayLabs-merchant-vue](https://github.com/yan253319066/XPayLabs-merchant-vue) | Merchant dashboard (Vue 3 + Element Plus) — GPL-3.0 |
-| [XPayLabs-sui-node-service](https://github.com/yan253319066/XPayLabs-sui-node-service) | SUI blockchain RPC proxy (Express) — MIT |
+| [XPayLabs-java](https://github.com/yan253319066/XPayLabs-java) | Gateway core (Spring Boot) |
+| [XPayLabs-merchant-vue](https://github.com/yan253319066/XPayLabs-merchant-vue) | Merchant dashboard (Vue 3 + Element Plus) |
+| [XPayLabs-sui-node-service](https://github.com/yan253319066/XPayLabs-sui-node-service) | SUI blockchain RPC proxy (Express) |
 | [XPayLabs](https://github.com/yan253319066/XPayLabs) | Marketing website (Next.js 15) |
 | [XPayLabs-docs](https://github.com/yan253319066/XPayLabs-docs) | Documentation (Mintlify) |
 | [XPayLabs-checkout](https://github.com/yan253319066/XPayLabs-checkout) | Checkout page (Vue 3) |
